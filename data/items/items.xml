@@ -9409,8 +9409,11 @@
 	<item id="5903" name="Ferumbras' hat">
 		<attribute key="description" value="It is the proof that Ferumbras has fallen. For now. The Edron Academy should be interested in this." />
 		<attribute key="weight" value="850" />
-		<attribute key="armor" value="1" />
+		<attribute key="armor" value="8" />
+		<attribute key="magiclevelpoints" value="3" />
+		<attribute key="absorbPercentAll" value="5" />
 		<attribute key="slotType" value="head" />
+		<attribute key="showattributes" value="1" />
 	</item>
 	<item id="5904" name="magic sulphur">
 		<attribute key="description" value="It smells rather badly but is said to be an important catalyst for magical rituals." />
