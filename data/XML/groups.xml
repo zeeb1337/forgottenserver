@@ -100,7 +100,7 @@
 	<group id="6" name="god" access="1" maxdepotitems="0" maxvipentries="200">
 		<flags>
 			<flag cannotusecombat="0" />
-			<flag cannotattackplayer="1" />
+			<flag cannotattackplayer="0" />
 			<flag cannotattackmonster="0" />
 			<flag cannotbeattacked="1" />
 			<flag canconvinceall="1" />
