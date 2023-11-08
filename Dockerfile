@@ -26,7 +26,7 @@ FROM alpine:3.15.0
 RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing/ \
   boost-iostreams \
   boost-system \
-  boost-filesystem \
+  #boost-filesystem \ # removed filesystem
   crypto++ \
   fmt \
   gmp \

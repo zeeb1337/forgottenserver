@@ -61,13 +61,14 @@ else ()
     find_package(Lua REQUIRED)
 endif ()
 
-find_package(Boost 1.66.0 REQUIRED COMPONENTS date_time system filesystem iostreams)
+#find_package(Boost 1.66.0 REQUIRED COMPONENTS date_time system filesystem iostreams)
+find_package(Boost 1.66.0 REQUIRED COMPONENTS date_time system iostreams) # removed filesystem
 
 include_directories(${Boost_INCLUDE_DIRS} ${Crypto++_INCLUDE_DIR} ${LUA_INCLUDE_DIR} ${MYSQL_INCLUDE_DIR} ${PUGIXML_INCLUDE_DIR})
 target_link_libraries(tfs PRIVATE
         Boost::date_time
         Boost::system
-        Boost::filesystem
+        #Boost::filesystem # removed filesystem
         Boost::iostreams
         fmt::fmt
         ${CMAKE_THREAD_LIBS_INIT}
