@@ -66,7 +66,7 @@ checkExpiredMarketOffersEachMinutes = 60
 maxMarketOffersAtATimePerPlayer = 10
 
 -- MySQL
--- NOTE: Remember to avoid using mysqlUser "root" in a production server and always
+-- NOTE: Remember to avoid using mysqlUser "root" on a production server and always
 -- include a strong password to protect your database and server from intrusion
 mysqlHost = "127.0.0.1"
 mysqlUser = "root"

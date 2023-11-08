@@ -1,0 +1,3 @@
+Account: 111111/tibia
+
+Do NOT forget to change/remove the account on production servers!
