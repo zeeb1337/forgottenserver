@@ -741,4 +741,7 @@
 	<monster name="Zugurosh" file="monsters/zugurosh.xml" />
 	<monster name="Zulazza the Corruptor" file="monsters/zulazza_the_corruptor.xml" />
 	<monster name="Zushuka" file="monsters/zushuka.xml" />
+	
+	<!-- Custom -->
+	<monster name="Training Dummy" file="monsters/custom/training_dummy.xml" />
 </monsters>
