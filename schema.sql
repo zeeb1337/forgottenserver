@@ -376,3 +376,7 @@ CREATE TRIGGER `oncreate_guilds` AFTER INSERT ON `guilds`
 END
 //
 DELIMITER ;
+
+-- Add testing account with GOD and normal player (111111/tibia)
+INSERT INTO `accounts` (`id`, `name`, `password`, `type`) VALUES ('1', '111111', '41da8bef22aaef9d7c5821fa0f0de7cccc4dda4d', '6');
+INSERT INTO `players` (`id`, `name`, `group_id`, `account_id`) VALUES ('1', '[GOD] Tester', '6', '1'), ('2', 'Tester', '1', '1');
