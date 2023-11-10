@@ -4,7 +4,8 @@
 #include "otpch.h"
 
 #include "script.h"
-#include <boost/filesystem.hpp>
+//#include <boost/filesystem.hpp> // removed
+#include <filesystem> // added
 #include "configmanager.h"
 
 extern LuaEnvironment g_luaEnvironment;
@@ -23,7 +24,8 @@ Scripts::~Scripts()
 
 bool Scripts::loadScripts(std::string folderName, bool isLib, bool reload)
 {
-	namespace fs = boost::filesystem;
+	//namespace fs = boost::filesystem; // removed
+	namespace fs = std::filesystem; // added
 
 	const auto dir = fs::current_path() / "data" / folderName;
 	if(!fs::exists(dir) || !fs::is_directory(dir)) {
