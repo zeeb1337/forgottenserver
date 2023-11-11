@@ -14,7 +14,7 @@ function onSay(player, words, param)
 		return false
 	end
 
-	target:setAccountType(ACCOUNT_TYPE_TUTOR)
+	target:setAccountType(ACCOUNT_TYPE_TESTER)
 	target:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have been promoted to a tester by " .. player:getName() .. ".")
 	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have promoted " .. target:getName() .. " to a tester.")
 	return false
