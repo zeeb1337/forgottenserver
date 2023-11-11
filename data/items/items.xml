@@ -2040,8 +2040,10 @@
 	</item>
 	<item id="2111" article="a" name="snowball">
 		<attribute key="weight" value="80" />
+		<attribute key="attack" value="1" />
 		<attribute key="weaponType" value="distance" />
 		<attribute key="shootType" value="snowball" />
+		<attribute key="maxHitChance" value="76" />
 		<attribute key="range" value="6" />
 	</item>
 	<item id="2112" article="a" name="teddy bear">
@@ -2660,10 +2662,15 @@
 		<attribute key="weight" value="1100" />
 	</item>
 	<item id="2237" article="a" name="dirty cape">
-		<attribute key="weight" value="500" />
+		<attribute key="weight" value="3200" />
+		<attribute key="slotType" value="body" />
 	</item>
 	<item id="2238" name="worn leather boots">
 		<attribute key="weight" value="900" />
+		<attribute key="armor" value="1" />
+		<attribute key="slotType" value="feet" />
+		<attribute key="speed" value="-10" />
+		<attribute key="showattributes" value="1" />
 	</item>
 	<item id="2239" article="a" name="burnt scroll">
 		<attribute key="weight" value="40" />
@@ -4274,6 +4281,9 @@
 	<item id="2555" article="an" name="anvil" />
 	<item id="2556" article="a" name="wooden hammer">
 		<attribute key="weight" value="600" />
+		<attribute key="defense" value="1" />
+		<attribute key="attack" value="1" />
+		<attribute key="weaponType" value="club" />
 	</item>
 	<item id="2557" article="a" name="hammer">
 		<attribute key="weight" value="1150" />
@@ -4283,6 +4293,9 @@
 	</item>
 	<item id="2559" article="a" name="small axe">
 		<attribute key="weight" value="2000" />
+		<attribute key="defense" value="1" />
+		<attribute key="attack" value="1" />
+		<attribute key="weaponType" value="axe" />
 	</item>
 	<item id="2560" article="a" name="mirror">
 		<attribute key="weight" value="950" />
@@ -11436,7 +11449,7 @@
 		<attribute key="shootType" value="infernalbolt" />
 		<attribute key="maxHitChance" value="91" />
 	</item>
-	<item id="6530" article="a" name="worn leather boots" editorsuffix=" (Old worn soft boots)">
+	<item id="6530" article="a" name="worn leather boots (unused)" editorsuffix=" (Old worn soft boots)">
 		<attribute key="weight" value="900" />
 	</item>
 	<item id="6531" article="a" name="santa hat">
@@ -23208,8 +23221,8 @@
 	</item>
 	<item id="13829" article="a" name="wooden sword">
 		<attribute key="weight" value="2000" />
-		<attribute key="defense" value="7" />
-		<attribute key="attack" value="7" />
+		<attribute key="defense" value="1" />
+		<attribute key="attack" value="1" />
 		<attribute key="weaponType" value="sword" />
 	</item>
 	<item id="13830" article="a" name="fleshy bone">
@@ -34984,9 +34997,9 @@
 		<attribute key="armor" value="9" />
 	</item>
 	<item id="24773" article="the" name="remains of Feroxa" />
-	<item id="24774" name="Store Coins">
-		<attribute key="weight" value="0" />
-		<attribute key="description" value="Store Coins are needed to shop exclusive products in the Store, including fabulous mounts, classy outfits, a Name Change or even Premium Time." />
+	<item id="24774" article="a" name="tibia coin">
+		<attribute key="weight" value="10" />
+		<attribute key="description" value="Tibia coins are needed to shop exclusive products in the Store, including fabulous mounts, classy outfits, a Name Change or even Premium Time." />
 	</item>
 	<item id="24775" article="a" name="burst arrow" />
 	<item id="24776" article="a" name="little adventurer doll">

@@ -1425,6 +1425,8 @@
 	<movevent event="DeEquip" itemid="25414" slot="shield" function="onDeEquipItem" />
 	
 	<!-- Custom -->
-	<movevent event="Equip" itemid="5903" slot="head" function="onEquipItem" /> <!-- Ferumbras' Hat -->
+	<movevent event="Equip" itemid="5903" slot="head" function="onEquipItem" /> <!-- Ferumbras' hat -->
 	<movevent event="DeEquip" itemid="5903" slot="head" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="2238" slot="feet" function="onEquipItem" /> <!-- worn leather boots -->
+	<movevent event="DeEquip" itemid="2238" slot="feet" function="onDeEquipItem" />
 </movements>
