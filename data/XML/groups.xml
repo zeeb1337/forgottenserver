@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <groups>
 	<group id="1" name="player" access="0" maxdepotitems="0" maxvipentries="0" />
-	<group id="2" name="tutor" access="0" maxdepotitems="0" maxvipentries="0">
+	<group id="2" name="hardcore player" access="0" maxdepotitems="0" maxvipentries="0">
 		<flags>
-			<flag talkorangehelpchannel="1" />
-			<flag cannotbemuted="1" />
+			<flag ishardcore="1" />
 		</flags>
 	</group>
-	<group id="3" name="senior tutor" access="0" maxdepotitems="0" maxvipentries="0">
+	<group id="3" name="tester" access="0" maxdepotitems="0" maxvipentries="0">
 		<flags>
-			<flag talkorangehelpchannel="1" />
+			<flag canalwayslogin="1" />
+			<flag canbroadcast="1" />
 			<flag cantalkredprivate="1" />
 			<flag cantalkredchannel="1" />
-			<flag cannotbemuted="1" />
+			<flag talkorangehelpchannel="1" />
+			<flag isalwayspremium="1" />
 		</flags>
 	</group>
 	<group id="4" name="gamemaster" access="1" maxdepotitems="0" maxvipentries="200">

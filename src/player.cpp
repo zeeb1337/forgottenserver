@@ -2000,6 +2000,10 @@ void Player::death(Creature* lastHitCreature)
 				double reduce = level / static_cast<double>(sumLevels);
 				unfairFightReduction = std::max<uint8_t>(20, std::floor((reduce * 100) + 0.5));
 			}
+			
+			if (hasFlag(PlayerFlag_IsHardcore)) {
+				unfairFightReduction = 100;
+			}
 		}
 
 		//Magic level loss
@@ -3925,6 +3929,10 @@ bool Player::isPromoted() const
 
 double Player::getLostPercent() const
 {
+	if (hasFlag(PlayerFlag_IsHardcore)) {
+		return 1;
+	}
+
 	int32_t deathLosePercent = g_config.getNumber(ConfigManager::DEATH_LOSE_PERCENT);
 	if (deathLosePercent != -1) {
 		if (isPromoted()) {
