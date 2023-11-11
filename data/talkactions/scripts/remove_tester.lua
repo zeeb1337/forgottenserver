@@ -1,5 +1,5 @@
 function onSay(player, words, param)
-	if player:getAccountType() <= ACCOUNT_TYPE_SENIORTUTOR then
+	if player:getAccountType() <= ACCOUNT_TYPE_TESTER then
 		return true
 	end
 
@@ -9,8 +9,8 @@ function onSay(player, words, param)
 		return false
 	end
 
-	if result.getNumber(resultId, "account_type") ~= ACCOUNT_TYPE_TUTOR then
-		player:sendCancelMessage("You can only demote a tutor to a normal player.")
+	if result.getNumber(resultId, "account_type") ~= ACCOUNT_TYPE_TESTER then
+		player:sendCancelMessage("You can only demote a tester to a normal player.")
 		result.free(resultId)
 		return false
 	end

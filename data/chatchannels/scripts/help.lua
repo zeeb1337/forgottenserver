@@ -16,7 +16,7 @@ function onSpeak(player, type, message)
 		return false
 	end
 
-	if playerAccountType >= ACCOUNT_TYPE_TUTOR then
+	if playerAccountType >= ACCOUNT_TYPE_TESTER then
 		if string.sub(message, 1, 6) == "!mute " then
 			local targetName = string.sub(message, 7)
 			local target = Player(targetName)
@@ -57,16 +57,16 @@ function onSpeak(player, type, message)
 	end
 
 	if type == TALKTYPE_CHANNEL_Y then
-		if playerAccountType >= ACCOUNT_TYPE_TUTOR or player:hasFlag(PlayerFlag_TalkOrangeHelpChannel) then
+		if playerAccountType >= ACCOUNT_TYPE_TESTER or player:hasFlag(PlayerFlag_TalkOrangeHelpChannel) then
 			type = TALKTYPE_CHANNEL_O
 		end
 	elseif type == TALKTYPE_CHANNEL_O then
-		if playerAccountType < ACCOUNT_TYPE_TUTOR and not player:hasFlag(PlayerFlag_TalkOrangeHelpChannel) then
+		if playerAccountType < ACCOUNT_TYPE_TESTER and not player:hasFlag(PlayerFlag_TalkOrangeHelpChannel) then
 			type = TALKTYPE_CHANNEL_Y
 		end
 	elseif type == TALKTYPE_CHANNEL_R1 then
 		if playerAccountType < ACCOUNT_TYPE_GAMEMASTER and not player:hasFlag(PlayerFlag_CanTalkRedChannel) then
-			if playerAccountType >= ACCOUNT_TYPE_TUTOR or player:hasFlag(PlayerFlag_TalkOrangeHelpChannel) then
+			if playerAccountType >= ACCOUNT_TYPE_TESTER or player:hasFlag(PlayerFlag_TalkOrangeHelpChannel) then
 				type = TALKTYPE_CHANNEL_O
 			else
 				type = TALKTYPE_CHANNEL_Y

@@ -1,7 +1,7 @@
 local ec = EventCallback
 
 ec.onReportBug = function(self, message, position, category)
-	if self:getAccountType() == ACCOUNT_TYPE_NORMAL then
+	if self:getAccountType() <= ACCOUNT_TYPE_HARDCORE then
 		return false
 	end
 

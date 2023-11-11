@@ -1,15 +1,15 @@
 function canJoin(player)
-	return player:getAccountType() >= ACCOUNT_TYPE_TUTOR
+	return player:getAccountType() >= ACCOUNT_TYPE_TESTER
 end
 
 function onSpeak(player, type, message)
 	local playerAccountType = player:getAccountType()
 	if type == TALKTYPE_CHANNEL_Y then
-		if playerAccountType >= ACCOUNT_TYPE_SENIORTUTOR then
+		if playerAccountType >= ACCOUNT_TYPE_TESTER then
 			type = TALKTYPE_CHANNEL_O
 		end
 	elseif type == TALKTYPE_CHANNEL_O then
-		if playerAccountType < ACCOUNT_TYPE_SENIORTUTOR then
+		if playerAccountType < ACCOUNT_TYPE_TESTER then
 			type = TALKTYPE_CHANNEL_Y
 		end
 	elseif type == TALKTYPE_CHANNEL_R1 then
