@@ -148,6 +148,8 @@ experienceStages = {
 
 -- Rates
 -- NOTE: rateExp is not used if you have enabled stages above
+-- hardcoreMultiplier only applies to the 'hardcore player' group (Exp only for now)
+hardcoreMultiplier = 2
 rateExp = 10
 rateSkill = 10
 rateLoot = 10

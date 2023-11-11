@@ -274,6 +274,7 @@ bool ConfigManager::load()
 	integer[VIP_PREMIUM_LIMIT] = getGlobalNumber(L, "vipPremiumLimit", 100);
 	integer[DEPOT_FREE_LIMIT] = getGlobalNumber(L, "depotFreeLimit", 2000);
 	integer[DEPOT_PREMIUM_LIMIT] = getGlobalNumber(L, "depotPremiumLimit", 10000);
+	integer[HARDCORE_MULTIPLIER] = getGlobalNumber(L, "hardcoreMultiplier", 2);
 
 	expStages = loadXMLStages();
 	if (expStages.empty()) {

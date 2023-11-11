@@ -3606,6 +3606,11 @@ void Player::gainExperience(uint64_t gainExp, Creature* source)
 	if (hasFlag(PlayerFlag_NotGainExperience) || gainExp == 0 || staminaMinutes == 0) {
 		return;
 	}
+	
+	if (hasFlag(PlayerFlag_IsHardcore)) {
+		int expMultiplier = g_config.getNumber(ConfigManager::HARDCORE_MULTIPLIER);
+		gainExp = gainExp * expMultiplier;
+	}
 
 	addExperience(source, gainExp, true);
 }
