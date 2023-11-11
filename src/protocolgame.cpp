@@ -2542,7 +2542,7 @@ void ProtocolGame::sendAddCreature(const Creature* creature, const Position& pos
 	msg.addDouble(Creature::speedC, 3);
 
 	// can report bugs?
-	if (player->getAccountType() >= ACCOUNT_TYPE_TUTOR) {
+	if (player->getAccountType() >= ACCOUNT_TYPE_TESTER) {
 		msg.addByte(0x01);
 	} else {
 		msg.addByte(0x00);

@@ -1093,8 +1093,8 @@ void LuaScriptInterface::registerFunctions()
 
 	// Enums
 	registerEnum(ACCOUNT_TYPE_NORMAL)
-	registerEnum(ACCOUNT_TYPE_TUTOR)
-	registerEnum(ACCOUNT_TYPE_SENIORTUTOR)
+	registerEnum(ACCOUNT_TYPE_HARDCORE)
+	registerEnum(ACCOUNT_TYPE_TESTER)
 	registerEnum(ACCOUNT_TYPE_GAMEMASTER)
 	registerEnum(ACCOUNT_TYPE_COMMUNITYMANAGER)
 	registerEnum(ACCOUNT_TYPE_GOD)
