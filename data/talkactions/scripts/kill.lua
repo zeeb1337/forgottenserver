@@ -13,6 +13,11 @@ function onSay(player, words, param)
 		player:sendCancelMessage("You cannot kill this player.")
 		return false
 	end
+	
+	if player:hasFlag(PlayerFlag_CannotAttackPlayer) then
+		player:sendCancelMessage("You cannot kill players.")
+		return false
+	end
 
 	target:getPosition():sendMagicEffect(CONST_ME_YALAHARIGHOST)
 	target:addHealth(-target:getHealth())
