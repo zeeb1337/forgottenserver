@@ -52,7 +52,6 @@ class ConfigManager
 			ONLY_INVITED_CAN_MOVE_HOUSE_ITEMS,
 			REMOVE_ON_DESPAWN,
 			PLAYER_CONSOLE_LOGS,
-			HARDCORE_MULTIPLIER,
 
 			LAST_BOOLEAN_CONFIG /* this must be the last one */
 		};
@@ -119,6 +118,7 @@ class ConfigManager
 			VIP_PREMIUM_LIMIT,
 			DEPOT_FREE_LIMIT,
 			DEPOT_PREMIUM_LIMIT,
+			HARDCORE_MULTIPLIER,
 
 			LAST_INTEGER_CONFIG /* this must be the last one */
 		};
