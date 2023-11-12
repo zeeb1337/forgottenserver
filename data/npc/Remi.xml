@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Remi" script="default.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100" />
+	<look type="9" head="0" body="0" legs="0" feet="0" addons="0" />
+	<parameters>
+		<parameter key="message_greet" value="Welcome |PLAYERNAME|, are you looking to {trade}? I sell all kinds of potions and trinkets." />
+		<parameter key="module_shop" value="1" />
+		<parameter key="shop_buyable" value="
+			<!-- Health potions -->
+			ultimate health potion,8473,400;
+			great health potion,7591,200;
+			strong health potion,7588,100;
+			health potion,7618,50;
+
+			<!-- Mana potions -->
+			ultimate mana potion,26029,400;
+			great mana potion,7590,200;
+			strong mana potion,7589,100;
+			mana potion,7620,50
+		"/>
+	</parameters>
+</npc>
