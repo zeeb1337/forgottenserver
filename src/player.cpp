@@ -3272,7 +3272,11 @@ uint64_t Player::getGainedExperience(Creature* attacker) const
 	if (g_config.getBoolean(ConfigManager::EXPERIENCE_FROM_PLAYERS)) {
 		Player* attackerPlayer = attacker->getPlayer();
 		if (attackerPlayer && attackerPlayer != this && skillLoss && std::abs(static_cast<int32_t>(attackerPlayer->getLevel() - level)) <= g_config.getNumber(ConfigManager::EXP_FROM_PLAYERS_LEVEL_RANGE)) {
-			return std::max<uint64_t>(0, std::floor(getLostExperience() * getDamageRatio(attacker) * 0.75));
+			if (hasFlag(PlayerFlag_IsHardcore)) {
+				return std::max<uint64_t>(0, std::floor(getLostExperience() * getDamageRatio(attacker) * 0.50));
+			} else {
+				return std::max<uint64_t>(0, std::floor(getLostExperience() * getDamageRatio(attacker) * 0.75));
+			}
 		}
 	}
 	return 0;
@@ -3607,10 +3611,11 @@ void Player::gainExperience(uint64_t gainExp, Creature* source)
 		return;
 	}
 	
-	//if (hasFlag(PlayerFlag_IsHardcore)) {
-		//int expMultiplier = g_config.getNumber(ConfigManager::HARDCORE_MULTIPLIER);
-		//gainExp = gainExp * expMultiplier;
-	//}
+	if (hasFlag(PlayerFlag_IsHardcore) && !source->getPlayer()) {
+		int expMultiplier = g_config.getNumber(ConfigManager::HARDCORE_MULTIPLIER);
+		
+		gainExp = gainExp * expMultiplier;
+	}
 
 	addExperience(source, gainExp, true);
 }
