@@ -11533,7 +11533,7 @@
 	</item>
 	<item id="6558" name="concentrated demonic blood">
 		<attribute key="description" value="Shake it to create a potion." />
-		<attribute key="weight" value="200" />
+		<attribute key="weight" value="300" />
 	</item>
 	<item id="6560" article="a" name="dead human">
 		<attribute key="containerSize" value="10" />
@@ -12934,12 +12934,12 @@
 		<attribute key="hitChance" value="5" />
 	</item>
 	<item id="7439" article="a" name="berserk potion">
-		<attribute key="description" value="Drinking this potion increases temporarily your fighting skill while decreasing your defense." />
-		<attribute key="weight" value="200" />
+		<attribute key="description" value="Drinking this potion temporarily increases your fighting skill while decreasing your defense." />
+		<attribute key="weight" value="300" />
 	</item>
 	<item id="7440" article="a" name="mastermind potion">
 		<attribute key="description" value="Drinking this potion temporarily increases your magic skill." />
-		<attribute key="weight" value="290" />
+		<attribute key="weight" value="300" />
 	</item>
 	<item id="7441" article="an" name="ice cube">
 		<attribute key="weight" value="2000" />
@@ -12949,8 +12949,8 @@
 		<attribute key="weight" value="2000" />
 	</item>
 	<item id="7443" article="a" name="bullseye potion">
-		<attribute key="description" value="Drinking this potion increases temporarily your distance skill while decreasing your defense." />
-		<attribute key="weight" value="200" />
+		<attribute key="description" value="Drinking this potion temporarily increases your distance skill while decreasing your defense." />
+		<attribute key="weight" value="300" />
 	</item>
 	<item id="7444" article="an" name="ice cube">
 		<attribute key="description" value="There is a rough shape of a head with tusks." />
@@ -13274,20 +13274,20 @@
 		<attribute key="description" value="It contains Ahmet's stolen property." />
 	</item>
 	<item id="7588" article="a" name="strong health potion">
-		<attribute key="weight" value="290" />
-		<attribute key="description" value="This potion can only be consumed by paladins and knights of level 50 or higher." />
+		<attribute key="weight" value="300" />
+		<attribute key="description" value="This potion can only be consumed by players of level 50 or higher." />
 	</item>
 	<item id="7589" article="a" name="strong mana potion">
-		<attribute key="weight" value="290" />
-		<attribute key="description" value="This potion can only be consumed by sorcerers, druids and paladins of level 50 or higher." />
+		<attribute key="weight" value="300" />
+		<attribute key="description" value="This potion can only be consumed by players of level 50 or higher." />
 	</item>
 	<item id="7590" article="a" name="great mana potion">
-		<attribute key="weight" value="310" />
-		<attribute key="description" value="This potion can only be consumed by sorcerers and druids of level 80 or higher." />
+		<attribute key="weight" value="350" />
+		<attribute key="description" value="This potion can only be consumed by players of level 100 or higher." />
 	</item>
 	<item id="7591" article="a" name="great health potion">
-		<attribute key="weight" value="310" />
-		<attribute key="description" value="This potion can only be consumed by knights of level 80 or higher." />
+		<attribute key="weight" value="350" />
+		<attribute key="description" value="This potion can only be consumed by players of level 100 or higher." />
 	</item>
 	<item fromid="7592" toid="7599" name="linen" />
 	<item id="7600" name="wood" />
@@ -13295,11 +13295,11 @@
 	<item fromid="7605" toid="7616" article="a" name="tent" />
 	<item id="7617" name="linen" />
 	<item id="7618" article="a" name="health potion">
-		<attribute key="weight" value="270" />
+		<attribute key="weight" value="250" />
 	</item>
 	<item id="7619" name="linen" />
 	<item id="7620" article="a" name="mana potion">
-		<attribute key="weight" value="270" />
+		<attribute key="weight" value="250" />
 	</item>
 	<item id="7621" article="a" name="dead dragon hatchling">
 		<attribute key="containerSize" value="30" />
@@ -13369,11 +13369,11 @@
 		<attribute key="weight" value="80" />
 	</item>
 	<item id="7634" article="an" name="empty potion flask">
-		<attribute key="weight" value="160" />
+		<attribute key="weight" value="200" />
 		<attribute key="description" value="Return it to a potion store for your deposit." />
 	</item>
 	<item id="7635" article="an" name="empty potion flask">
-		<attribute key="weight" value="180" />
+		<attribute key="weight" value="250" />
 		<attribute key="description" value="Return it to a potion store for your deposit." />
 	</item>
 	<item id="7636" article="an" name="empty potion flask">
@@ -15370,12 +15370,12 @@
 	<item id="8459" article="a" name="strange statue" />
 	<item fromid="8460" toid="8471" name="earth" />
 	<item id="8472" article="a" name="great spirit potion">
-		<attribute key="weight" value="310" />
-		<attribute key="description" value="This potion can only be consumed by paladins of level 80 or higher." />
+		<attribute key="weight" value="350" />
+		<attribute key="description" value="This potion can only be consumed by players of level 100 or higher." />
 	</item>
 	<item id="8473" article="an" name="ultimate health potion">
-		<attribute key="weight" value="310" />
-		<attribute key="description" value="This potion can only be consumed by knights of level 130 or higher." />
+		<attribute key="weight" value="400" />
+		<attribute key="description" value="This potion can only be consumed by players of level 150 or higher." />
 	</item>
 	<item id="8474" article="an" name="antidote potion">
 		<attribute key="weight" value="265" />
@@ -15630,7 +15630,7 @@
 		<attribute key="weight" value="1300" />
 	</item>
 	<item id="8704" article="a" name="small health potion">
-		<attribute key="weight" value="265" />
+		<attribute key="weight" value="250" />
 	</item>
 	<item fromid="8705" toid="8706" name="balloons" />
 	<item id="8707" name="your student book">
@@ -23413,8 +23413,8 @@
 		<attribute key="weight" value="180" />
 	</item>
 	<item id="13924" article="an" name="empty potion flask">
-		<attribute key="description" value="Return it to a magic store for deposit." />
-		<attribute key="weight" value="180" />
+		<attribute key="description" value="Return it to a potion store for your deposit." />
+		<attribute key="weight" value="150" />
 	</item>
 	<item id="13925" article="a" name="plague mask">
 		<attribute key="description" value="It seems to be a part of an outfit. If you own the outfit you might refine it by using the item." />
@@ -36497,16 +36497,16 @@
 	<item id="26027" name="strange slits" />
 	<item id="26028" name="strange holes" />
 	<item id="26029" article="an" name="ultimate mana potion">
-		<attribute key="weight" value="310" />
-		<attribute key="description" value="This potion can only be consumed by sorcerers and druids of level 130 or higher." />
+		<attribute key="weight" value="400" />
+		<attribute key="description" value="This potion can only be consumed by players of level 150 or higher." />
 	</item>
 	<item id="26030" article="an" name="ultimate spirit potion">
-		<attribute key="weight" value="310" />
-		<attribute key="description" value="This potion can only be consumed by paladins of level 130 or higher." />
+		<attribute key="weight" value="400" />
+		<attribute key="description" value="This potion can only be consumed by players of level 150 or higher." />
 	</item>
 	<item id="26031" article="a" name="supreme health potion">
-		<attribute key="weight" value="350" />
-		<attribute key="description" value="This potion can only be consumed by knights of level 200 or higher." />
+		<attribute key="weight" value="450" />
+		<attribute key="description" value="This potion can only be consumed by players of level 200 or higher." />
 	</item>
 	<item fromid="26032" toid="26034" name="stones" />
 	<item fromid="26035" toid="26043" article="a" name="stone" />
