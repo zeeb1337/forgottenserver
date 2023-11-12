@@ -3607,10 +3607,10 @@ void Player::gainExperience(uint64_t gainExp, Creature* source)
 		return;
 	}
 	
-	if (hasFlag(PlayerFlag_IsHardcore)) {
-		int expMultiplier = g_config.getNumber(ConfigManager::HARDCORE_MULTIPLIER);
-		gainExp = gainExp * expMultiplier;
-	}
+	//if (hasFlag(PlayerFlag_IsHardcore)) {
+		//int expMultiplier = g_config.getNumber(ConfigManager::HARDCORE_MULTIPLIER);
+		//gainExp = gainExp * expMultiplier;
+	//}
 
 	addExperience(source, gainExp, true);
 }
