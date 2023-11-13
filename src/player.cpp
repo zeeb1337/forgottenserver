@@ -2050,9 +2050,10 @@ void Player::death(Creature* lastHitCreature)
 		if (expLoss != 0) {
 			uint32_t oldLevel = level;
 
-			if (vocation->getId() == VOCATION_NONE || level > 7) {
-				experience -= expLoss;
-			}
+			//if (!vocation->getId() == VOCATION_NONE) {
+				//experience -= expLoss;
+			//}
+			experience -= expLoss;
 
 			while (level > 1 && experience < Player::getExpForLevel(level)) {
 				--level;
