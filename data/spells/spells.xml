@@ -99,6 +99,10 @@
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" />
 	</instant>
+	<instant group="attack" spellid="106" name="Earthquake" words="exori gran mas" level="90" mana="340" premium="1" needweapon="1" cooldown="2000" groupcooldown="2000" needlearn="0" script="attack/earthquake.lua">
+		<vocation name="Knight" />
+		<vocation name="Elite Knight" />
+	</instant>
 	<instant group="attack" spellid="106" name="Directional Quake" words="exori mas lux" level="33" mana="160" premium="1" needweapon="1" direction="1" cooldown="2000" groupcooldown="2000" needlearn="0" script="attack/directional_quake.lua">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" />
