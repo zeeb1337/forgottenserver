@@ -118,6 +118,16 @@ std::string Player::getDescription(int32_t lookDistance) const
 		}
 	}
 
+	if (hasFlag(PlayerFlag_IsHardcore)) {
+		if (lookDistance == -1) {
+			s << " You are hardcore.";
+		} else if (sex == PLAYERSEX_FEMALE) {
+			s << " She is hardcore.";
+		} else {
+			s << " He is hardcore.";
+		}
+	}
+
 	if (party) {
 		if (lookDistance == -1) {
 			s << " Your party has ";
@@ -165,6 +175,7 @@ std::string Player::getDescription(int32_t lookDistance) const
 	} else {
 		s << ", which has " << memberCount << " members, " << guild->getMembersOnline().size() << " of them online.";
 	}
+	
 	return s.str();
 }
 
