@@ -107,6 +107,10 @@
 		<vocation name="Sorcerer" />
 		<vocation name="Master Sorcerer" />
 	</instant>
+	<instant group="attack" spellid="24" name="Dark Swarm" words="exevo gran mas mort" level="60" mana="1200" premium="1" cooldown="2000" groupcooldown="2000" selftarget="1" needlearn="0" script="attack/dark_swarm.lua">
+		<vocation name="Sorcerer" />
+		<vocation name="Master Sorcerer" />
+	</instant>
 	<instant group="attack" spellid="143" name="Holy Flash" words="utori san" level="70" mana="30" premium="1" range="3" casterTargetOrDirection="1" aggressive="1" blockwalls="1" cooldown="2000" groupcooldown="2000" needlearn="0" script="attack/holy_flash.lua">
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" />
