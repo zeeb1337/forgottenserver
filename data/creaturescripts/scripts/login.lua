@@ -25,6 +25,17 @@ function onLogin(player)
 		player:setVocation(vocation:getDemotion())
 	end
 
+	-- Unblessed
+	if not player:getGroup():getAccess() then
+		if not player:hasFlag(PlayerFlag_IsHardcore) then
+			if not player:hasBlessing(6) then
+				player:sendTextMessage(MESSAGE_STATUS_WARNING, "You are not fully blessed!")
+			else
+				player:sendTextMessage(MESSAGE_INFO_DESCR, "You are fully blessed!")
+			end
+		end
+	end
+
 	-- Events
 	player:registerEvent("PlayerDeath")
 	player:registerEvent("DropLoot")
