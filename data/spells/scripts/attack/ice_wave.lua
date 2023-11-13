@@ -1,11 +1,11 @@
 local combat = Combat()
 combat:setParameter(COMBAT_PARAM_TYPE, COMBAT_ICEDAMAGE)
 combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_ICEAREA)
-combat:setArea(createCombatArea(AREA_WAVE4, AREADIAGONAL_WAVE4))
+combat:setArea(createCombatArea(AREA_SQUAREWAVE5, AREADIAGONAL_SQUAREWAVE5))
 
 function onGetFormulaValues(player, level, magicLevel)
-	local min = (level / 5) + (magicLevel * 0.8) + 5
-	local max = (level / 5) + (magicLevel * 2) + 12
+	local min = (level / 5) + (magicLevel * 4) + 25
+	local max = (level / 5) + (magicLevel * 7) + 50
 	return -min, -max
 end
 
