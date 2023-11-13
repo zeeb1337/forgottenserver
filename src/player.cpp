@@ -87,8 +87,11 @@ std::string Player::getDescription(int32_t lookDistance) const
 	std::ostringstream s;
 
 	if (lookDistance == -1) {
-		s << "yourself.";
-
+		if (hasFlag(PlayerFlag_IsHardcore)) {
+			s << "your hardcore self.";
+		} else {
+			s << "yourself.";
+		}
 		if (group->access) {
 			s << " You are " << group->name << '.';
 		} else if (vocation->getId() != VOCATION_NONE) {
@@ -97,7 +100,11 @@ std::string Player::getDescription(int32_t lookDistance) const
 			s << " You have no vocation.";
 		}
 	} else {
-		s << name;
+		if (hasFlag(PlayerFlag_IsHardcore)) {
+			s << "hardcore " << name;
+		} else {
+			s << name;
+		}
 		if (!group->access) {
 			s << " (Level " << level << ')';
 		}
@@ -115,16 +122,6 @@ std::string Player::getDescription(int32_t lookDistance) const
 			s << " is " << vocation->getVocDescription() << '.';
 		} else {
 			s << " has no vocation.";
-		}
-	}
-
-	if (hasFlag(PlayerFlag_IsHardcore)) {
-		if (lookDistance == -1) {
-			s << " You are hardcore.";
-		} else if (sex == PLAYERSEX_FEMALE) {
-			s << " She is hardcore.";
-		} else {
-			s << " He is hardcore.";
 		}
 	}
 
@@ -153,6 +150,10 @@ std::string Player::getDescription(int32_t lookDistance) const
 	}
 
 	if (!guild || !guildRank) {
+		//if (!group->access) {
+			//s << " [0-0]"; // Placeholder for PVP frag/death counter
+		//}
+		
 		return s.str();
 	}
 
@@ -175,6 +176,10 @@ std::string Player::getDescription(int32_t lookDistance) const
 	} else {
 		s << ", which has " << memberCount << " members, " << guild->getMembersOnline().size() << " of them online.";
 	}
+	
+	//if (!group->access) {
+		//s << " [0-0]"; // Placeholder for PVP frag/death counter
+	//}
 	
 	return s.str();
 }
