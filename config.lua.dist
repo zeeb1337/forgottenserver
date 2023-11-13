@@ -1,18 +1,18 @@
 -- Combat Settings
 -- NOTE: valid values for worldType are: "pvp", "no-pvp" and "pvp-enforced"
-worldType = "pvp-enforced"
+worldType = "pvp"
 hotkeyAimbotEnabled = true
 protectionLevel = 1
 killsToRedSkull = 3
 killsToBlackSkull = 6
-pzLocked = 60000
+pzLocked = 1 * 60 * 1000
 removeChargesFromRunes = true
 removeChargesFromPotions = true
 removeWeaponAmmunition = true
 removeWeaponCharges = true
 timeToDecreaseFrags = 24 * 60 * 60
-whiteSkullTime = 15 * 60
-stairJumpExhaustion = 2000
+whiteSkullTime = 5 * 60
+stairJumpExhaustion = 2 * 1000
 experienceByKillingPlayers = true
 expFromPlayersLevelRange = 9999
 
