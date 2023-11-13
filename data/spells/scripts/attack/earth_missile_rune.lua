@@ -1,11 +1,11 @@
 local combat = Combat()
 combat:setParameter(COMBAT_PARAM_TYPE, COMBAT_EARTHDAMAGE)
-combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_STONES)
-combat:setParameter(COMBAT_PARAM_DISTANCEEFFECT, CONST_ANI_EARTH)
+combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_CARNIPHILA)
+combat:setParameter(COMBAT_PARAM_DISTANCEEFFECT, CONST_ANI_SMALLEARTH)
 
 function onGetFormulaValues(player, level, magicLevel)
-	local min = (level / 5) + (magicLevel * 0.8) + 5
-	local max = (level / 5) + (magicLevel * 1.6) + 10
+	local min = (level / 5) + (magicLevel * 1.5) + 10
+	local max = (level / 5) + (magicLevel * 2) + 15
 	return -min, -max
 end
 

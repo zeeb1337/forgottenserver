@@ -2721,7 +2721,13 @@
 		<attribute key="weight" value="105" />
 		<attribute key="charges" value="2" />
 	</item>
-	<item fromid="2263" toid="2264" article="a" name="spell rune">
+	<item id="2263" article="an" name="death missile rune">
+		<attribute key="type" value="rune" />
+		<attribute key="runeSpellName" value="adori mort" />
+		<attribute key="weight" value="42" />
+		<attribute key="charges" value="5" />
+	</item>
+	<item id="2264" article="a" name="spell rune">
 		<attribute key="type" value="rune" />
 		<attribute key="weight" value="120" />
 	</item>
@@ -2757,7 +2763,7 @@
 		<attribute key="type" value="rune" />
 		<attribute key="weight" value="120" />
 	</item>
-	<item id="2271" article="an" name="icicle rune">
+	<item id="2271" article="an" name="ice missile rune">
 		<attribute key="type" value="rune" />
 		<attribute key="runeSpellName" value="adori frigo" />
 		<attribute key="weight" value="42" />
@@ -2817,11 +2823,11 @@
 		<attribute key="weight" value="105" />
 		<attribute key="charges" value="2" />
 	</item>
-	<item id="2287" article="a" name="light magic missile rune">
+	<item id="2287" article="a" name="earth missile rune">
 		<attribute key="type" value="rune" />
-		<attribute key="runeSpellName" value="adori min vis" />
-		<attribute key="weight" value="21" />
-		<attribute key="charges" value="10" />
+		<attribute key="runeSpellName" value="adori tera" />
+		<attribute key="weight" value="42" />
+		<attribute key="charges" value="5" />
 	</item>
 	<item id="2288" article="a" name="stone shower rune">
 		<attribute key="type" value="rune" />
@@ -2885,11 +2891,11 @@
 		<attribute key="weight" value="42" />
 		<attribute key="charges" value="5" />
 	</item>
-	<item id="2303" article="a" name="fire wall rune">
+	<item id="2303" article="a" name="fire missile rune">
 		<attribute key="type" value="rune" />
-		<attribute key="runeSpellName" value="adevo mas grav flam" />
-		<attribute key="weight" value="52" />
-		<attribute key="charges" value="4" />
+		<attribute key="runeSpellName" value="adori flam" />
+		<attribute key="weight" value="42" />
+		<attribute key="charges" value="5" />
 	</item>
 	<item id="2304" article="a" name="great fireball rune">
 		<attribute key="type" value="rune" />
@@ -2903,15 +2909,21 @@
 		<attribute key="weight" value="105" />
 		<attribute key="charges" value="2" />
 	</item>
-	<item fromid="2306" toid="2307" article="a" name="spell rune">
-		<attribute key="type" value="rune" />
-		<attribute key="weight" value="120" />
-	</item>
-	<item id="2308" article="a" name="soulfire rune">
+	<item id="2306" article="a" name="soulfire rune">
 		<attribute key="type" value="rune" />
 		<attribute key="runeSpellName" value="adevo res flam" />
 		<attribute key="weight" value="70" />
 		<attribute key="charges" value="3" />
+	</item>
+	<item id="2307" article="a" name="spell rune">
+		<attribute key="type" value="rune" />
+		<attribute key="weight" value="120" />
+	</item>
+	<item id="2308" article="a" name="fire wall rune">
+		<attribute key="type" value="rune" />
+		<attribute key="runeSpellName" value="adevo mas grav flam" />
+		<attribute key="weight" value="52" />
+		<attribute key="charges" value="4" />
 	</item>
 	<item id="2309" article="a" name="spell rune">
 		<attribute key="type" value="rune" />
@@ -2923,11 +2935,11 @@
 		<attribute key="weight" value="70" />
 		<attribute key="charges" value="3" />
 	</item>
-	<item id="2311" article="a" name="heavy magic missile rune">
+	<item id="2311" article="a" name="energy missile rune">
 		<attribute key="type" value="rune" />
 		<attribute key="runeSpellName" value="adori vis" />
-		<attribute key="weight" value="21" />
-		<attribute key="charges" value="10" />
+		<attribute key="weight" value="42" />
+		<attribute key="charges" value="5" />
 	</item>
 	<item id="2312" article="a" name="spell rune">
 		<attribute key="type" value="rune" />
