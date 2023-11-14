@@ -1,8 +1,7 @@
 local config = {
-	blessings = 6,
 	basePrice = 0,
 	pricePerLevel = 1000,
-	freeBlessMaxLevel = 10
+	freeBlessMaxLevel = 20
 }
 
 function onSay(player, words, param)
@@ -10,32 +9,45 @@ function onSay(player, words, param)
 		return true
 	end
 
-	if player:isPremium() then
-		if player:hasBlessing(config.blessings) then
+	if not player:isPremium() then
+		player:sendCancelMessage("Only premium accounts may purchase blessings.")
+		player:getPosition():sendMagicEffect(CONST_ME_POFF)
+		return false
+	end
+
+	if player:hasFlag(PlayerFlag_IsHardcore) then
+		player:sendTextMessage(MESSAGE_STATUS_WARNING, "Hardcore players can not be blessed!")
+		player:getPosition():sendMagicEffect(CONST_ME_POFF)
+		return false
+	end
+
+	for i = 1, 5 do
+		if player:hasBlessing(i) then
 			player:sendTextMessage(MESSAGE_INFO_DESCR, "You are already blessed.")
 			player:getPosition():sendMagicEffect(CONST_ME_POFF)
-		else
-			if player:hasFlag(PlayerFlag_IsHardcore) then
-				player:sendTextMessage(MESSAGE_STATUS_WARNING, "Hardcore players can not be blessed!")
-				player:getPosition():sendMagicEffect(CONST_ME_POFF)
-			else
-				if player:getLevel() <= config.freeBlessMaxLevel then
-					player:addBlessing(config.blessings)
-					player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
-					player:sendTextMessage(MESSAGE_INFO_DESCR, "You have been blessed for free since you are level " .. math.floor(player:getLevel() + 0.5) .. ".")
-				elseif player:removeTotalMoney(config.basePrice + (player:getLevel() * config.pricePerLevel)) then
-					player:addBlessing(config.blessings)
-					player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
-					player:sendTextMessage(MESSAGE_INFO_DESCR, "You have been blessed for " .. math.floor((config.basePrice + (player:getLevel() * config.pricePerLevel)) + 0.5) .." gold coins.")
-				else
-					player:sendCancelMessage("You do not have enough money to be blessed, it costs " .. math.floor((config.basePrice + (player:getLevel() * config.pricePerLevel)) + 0.5) .." gold coins.")
-					player:getPosition():sendMagicEffect(CONST_ME_POFF)
-				end
-			end
+			return false
 		end
-	else
-		player:sendCancelMessage("Only premium accounts may purchase blessings this way.")
-		player:getPosition():sendMagicEffect(CONST_ME_POFF)
 	end
+
+	if player:getLevel() <= config.freeBlessMaxLevel then
+		for i = 1, 5 do
+			player:addBlessing(i)
+		end
+		player:sendTextMessage(MESSAGE_INFO_DESCR, "You have been blessed for free since you are level " .. math.floor(player:getLevel() + 0.5) .. ".")
+		player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
+		return false
+	end
+	
+	if player:removeTotalMoney(config.basePrice + (player:getLevel() * config.pricePerLevel)) then
+		for i = 1, 5 do
+			player:addBlessing(i)
+		end
+		player:sendTextMessage(MESSAGE_INFO_DESCR, "You have been blessed for " .. math.floor((config.basePrice + (player:getLevel() * config.pricePerLevel)) + 0.5) .." gold coins.")
+		player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
+		return false
+	end
+
+	player:sendCancelMessage("You do not have enough money to be blessed, it costs " .. math.floor((config.basePrice + (player:getLevel() * config.pricePerLevel)) + 0.5) .." gold coins.")
+	player:getPosition():sendMagicEffect(CONST_ME_POFF)
 	return false
 end

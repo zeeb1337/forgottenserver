@@ -25,14 +25,19 @@ function onLogin(player)
 		player:setVocation(vocation:getDemotion())
 	end
 
-	-- Unblessed
+	-- Check blessings
 	if not player:getGroup():getAccess() then
 		if not player:hasFlag(PlayerFlag_IsHardcore) then
-			if not player:hasBlessing(6) then
-				player:sendTextMessage(MESSAGE_STATUS_WARNING, "You are not fully blessed!")
-			else
-				player:sendTextMessage(MESSAGE_INFO_DESCR, "You are fully blessed!")
+			for i = 1, 5 do
+				if not player:hasBlessing(i) then
+					player:sendTextMessage(MESSAGE_STATUS_WARNING, "You are not blessed!")
+					player:sendTextMessage(MESSAGE_STATUS_DEFAULT, "Use !bless to purchase all blessings.")
+					return true
+				end
 			end
+			player:sendTextMessage(MESSAGE_INFO_DESCR, "You are either partially or fully blessed!")
+			player:sendTextMessage(MESSAGE_STATUS_DEFAULT, "Use !checkbless to see which blessing(s) you have.")
+			return true
 		end
 	end
 
