@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Dragon" nameDescription="a dragon" race="blood" experience="700" speed="172">
+<monster name="Dragon" nameDescription="a dragon" race="blood" experience="700" speed="200" manacost="920">
 	<health now="1000" max="1000" />
 	<look type="34" corpse="5973" />
 	<targetchange interval="4000" chance="10" />
 	<flags>
-		<flag summonable="0" />
+		<flag summonable="1" />
 		<flag attackable="1" />
 		<flag hostile="1" />
 		<flag illusionable="1" />
