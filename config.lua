@@ -15,6 +15,7 @@ whiteSkullTime = 5 * 60
 stairJumpExhaustion = 2 * 1000
 experienceByKillingPlayers = true
 expFromPlayersLevelRange = 9999
+allowWalkthrough = false
 
 -- Connection Config
 -- NOTE: maxPlayers set to 0 means no limit
@@ -28,7 +29,6 @@ maxPlayers = 0
 motd = "Welcome to The Forgotten Server v1.41!"
 onePlayerOnlinePerAccount = true
 allowClones = false
-allowWalkthrough = true
 serverName = "Forgotten"
 statusTimeout = 5000
 replaceKickOnLogin = true
@@ -38,7 +38,7 @@ maxPacketsPerSecond = 25
 -- NOTE: Leave deathLosePercent as -1 if you want to use the default death penalty formula
 -- for the old formula, set it to 10
 -- for no skill/experience loss, set it to 0
-deathLosePercent = -1
+deathLosePercent = 10
 
 -- Houses
 -- NOTE: set housePriceEachSQM to -1 to disable the ingame buy house functionality
@@ -46,7 +46,7 @@ deathLosePercent = -1
 -- use "never" or any other value to disable the rent system
 housePriceEachSQM = 1000
 houseRentPeriod = "daily"
-houseOwnedByAccount = false
+houseOwnedByAccount = true
 houseDoorShowPrice = true
 onlyInvitedCanMoveHouseItems = true
 
@@ -87,11 +87,11 @@ kickIdlePlayerAfterMinutes = 15
 maxMessageBuffer = 4
 emoteSpells = false
 classicEquipmentSlots = true
-classicAttackSpeed = false
+classicAttackSpeed = true
 showScriptsLogInConsole = false
 showOnlineStatusInCharlist = false
-yellMinimumLevel = 1
-yellAlwaysAllowPremium = false
+yellMinimumLevel = 10
+yellAlwaysAllowPremium = true
 forceMonsterTypesOnLoad = true
 cleanProtectionZones = true
 luaItemDesc = false
@@ -151,9 +151,9 @@ experienceStages = {
 -- hardcoreMultiplier only applies to the 'hardcore player' group (Exp only for now)
 hardcoreMultiplier = 2
 rateExp = 10
-rateSkill = 10
-rateLoot = 10
 rateMagic = 10
+rateSkill = 10
+rateLoot = 1
 rateSpawn = 1
 
 -- Monster Despawn Config
