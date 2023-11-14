@@ -3,8 +3,8 @@
 worldType = "pvp"
 hotkeyAimbotEnabled = true
 protectionLevel = 1
-killsToRedSkull = 3
-killsToBlackSkull = 6
+killsToRedSkull = 6
+killsToBlackSkull = 12
 pzLocked = 1 * 60 * 1000
 removeChargesFromRunes = true
 removeChargesFromPotions = true
