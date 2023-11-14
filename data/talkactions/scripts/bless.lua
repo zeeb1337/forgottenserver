@@ -42,12 +42,12 @@ function onSay(player, words, param)
 		for i = 1, 5 do
 			player:addBlessing(i)
 		end
-		player:sendTextMessage(MESSAGE_INFO_DESCR, "You have been blessed for " .. math.floor((config.basePrice + (player:getLevel() * config.pricePerLevel)) + 0.5) .." gold coins.")
+		player:sendTextMessage(MESSAGE_INFO_DESCR, "You have been blessed for " .. math.floor(((player:getLevel() * config.pricePerLevel)) + config.basePrice + 0.5) .." gold coins.")
 		player:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 		return false
 	end
 
-	player:sendCancelMessage("You do not have enough money to be blessed, it costs " .. math.floor((config.basePrice + (player:getLevel() * config.pricePerLevel)) + 0.5) .." gold coins.")
+	player:sendCancelMessage("You do not have enough money to be blessed, it costs " .. math.floor(((player:getLevel() * config.pricePerLevel)) + config.basePrice + 0.5) .." gold coins.")
 	player:getPosition():sendMagicEffect(CONST_ME_POFF)
 	return false
 end
