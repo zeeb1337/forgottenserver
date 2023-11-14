@@ -111,7 +111,7 @@
 		<vocation name="Sorcerer" />
 		<vocation name="Master Sorcerer" />
 	</instant>
-	<instant group="attack" spellid="24" name="Mass Death" words="exevo gran mas mort" level="60" mana="1200" premium="1" cooldown="2000" groupcooldown="2000" selftarget="1" needlearn="0" script="attack/mass_death.lua">
+	<instant group="attack" spellid="24" name="Mass Death" words="exevo gran mas mort" level="65" mana="1400" premium="1" cooldown="2000" groupcooldown="2000" selftarget="1" needlearn="0" script="attack/mass_death.lua">
 		<vocation name="Sorcerer" />
 		<vocation name="Master Sorcerer" />
 	</instant>
