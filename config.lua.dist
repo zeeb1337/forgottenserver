@@ -13,9 +13,9 @@ removeWeaponCharges = true
 timeToDecreaseFrags = 24 * 60 * 60
 whiteSkullTime = 5 * 60
 stairJumpExhaustion = 2 * 1000
+allowWalkthrough = false
 experienceByKillingPlayers = true
 expFromPlayersLevelRange = 9999
-allowWalkthrough = false
 
 -- Connection Config
 -- NOTE: maxPlayers set to 0 means no limit
@@ -63,7 +63,7 @@ mapAuthor = "Komic"
 marketOfferDuration = 7 * 24 * 60 * 60
 premiumToCreateMarketOffer = true
 checkExpiredMarketOffersEachMinutes = 60
-maxMarketOffersAtATimePerPlayer = 10
+maxMarketOffersAtATimePerPlayer = 5
 
 -- MySQL
 -- NOTE: Remember to avoid using mysqlUser "root" on a production server and always
@@ -99,9 +99,9 @@ showPlayerLogInConsole = true
 
 -- VIP & Depot Limits
 -- NOTE: you can set custom limits per group in data/XML/groups.xml
-vipFreeLimit = 20
-vipPremiumLimit = 100
-depotFreeLimit = 2000
+vipFreeLimit = 100
+vipPremiumLimit = 1000
+depotFreeLimit = 1000
 depotPremiumLimit = 10000
 
 -- World Light
@@ -180,7 +180,7 @@ defaultPriority = "high"
 startupDatabaseOptimization = false
 
 -- Status Server Information
-ownerName = "zeeb1337"
+ownerName = "zeeb"
 ownerEmail = ""
-url = "https://otland.net/"
-location = "Sweden"
+url = "https://github.com/zeeb1337/forgottenserver/tree/1.41"
+location = "Unknown"
