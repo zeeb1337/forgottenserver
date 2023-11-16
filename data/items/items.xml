@@ -4491,17 +4491,17 @@
 	<item fromid="2638" toid="2639" article="a" name="tic-tac-toe token">
 		<attribute key="weight" value="500" />
 	</item>
-	<item id="2640" article="a" name="pair of soft boots (faster regeneration)">
+	<item id="2640" article="a pair of" name="soft boots (faster regeneration)">
 		<attribute key="weight" value="800" />
 		<attribute key="slotType" value="feet" />
-		<attribute key="decayTo" value="10021" />
-		<attribute key="transformDeEquipTo" value="6132" />
-		<attribute key="duration" value="14400" />
-		<attribute key="healthGain" value="3" />
-		<attribute key="healthTicks" value="6000" />
-		<attribute key="manaGain" value="12" />
-		<attribute key="manaTicks" value="6000" />
-		<attribute key="showduration" value="1" />
+		<!--<attribute key="decayTo" value="10021" />-->
+		<!--<attribute key="transformDeEquipTo" value="6132" />-->
+		<!--<attribute key="duration" value="14400" />-->
+		<attribute key="healthGain" value="1" />
+		<attribute key="healthTicks" value="1000" />
+		<attribute key="manaGain" value="1" />
+		<attribute key="manaTicks" value="1000" />
+		<!--<attribute key="showduration" value="1" />-->
 		<attribute key="showattributes" value="1" />
 	</item>
 	<item id="2641" name="patched boots">
@@ -10632,12 +10632,15 @@
 		<attribute key="defense" value="26" />
 		<attribute key="weaponType" value="shield" />
 	</item>
-	<item id="6132" article="a" name="pair of soft boots">
+	<item id="6132" name="Ferumbras' boots">
+		<attribute key="description" value="These boots are brimming with power." />
 		<attribute key="weight" value="800" />
 		<attribute key="slotType" value="feet" />
-		<attribute key="transformEquipTo" value="2640" />
-		<attribute key="stopduration" value="1" />
-		<attribute key="showduration" value="1" />
+		<attribute key="magiclevelpoints" value="1" />
+		<attribute key="showattributes" value="1" />
+		<!--<attribute key="transformEquipTo" value="2640" />-->
+		<!--<attribute key="stopduration" value="1" />-->
+		<!--<attribute key="showduration" value="1" />-->
 	</item>
 	<item fromid="6133" toid="6159" article="a" name="tree wall" />
 	<item fromid="6160" toid="6172" article="a" name="grass roof" />
@@ -35910,14 +35913,14 @@
 	<item id="25419" article="a" name="shaggy ogre bag">
 		<attribute key="weight" value="800" />
 	</item>
-	<item id="25420" name="Ferumbras' staff">
+	<item id="25420" name="Ferumbras' staff (unused)">
 		<attribute key="weight" value="2900" />
 		<attribute key="defense" value="30" />
 		<attribute key="attack" value="20" />
 		<attribute key="description" value="It is made of platinum and emeralds and topped by a large F made of gold." />
 		<attribute key="weaponType" value="club" />
 	</item>
-	<item id="25421" name="Ferumbras' staff">
+	<item id="25421" name="Ferumbras' staff (unused)">
 		<attribute key="weight" value="2250" />
 		<attribute key="description" value="It is made of platinum and emeralds and topped by a large F made of gold." />
 		<attribute key="weaponType" value="wand" />
@@ -35932,19 +35935,20 @@
 		<attribute key="description" value="It is made of platinum and emeralds and topped by a large F made of gold." />
 		<attribute key="weaponType" value="wand" />
 		<attribute key="shootType" value="energy" />
-		<attribute key="magiclevelpoints" value="1" />
+		<attribute key="magiclevelpoints" value="2" />
 		<attribute key="range" value="4" />
-		<attribute key="showduration" value="0" />
-		<attribute key="decayTo" value="25420" />
-		<attribute key="duration" value="43200" />
+		<!--<attribute key="showduration" value="0" />-->
+		<!--<attribute key="decayTo" value="25420" />-->
+		<!--<attribute key="duration" value="43200" />-->
 	</item>
 	<item id="25423" name="Ferumbras' amulet">
 		<attribute key="weight" value="500" />
 		<attribute key="description" value="The rare jewel is made of sapphire and ruby and has a golden F pendant." />
 		<attribute key="armor" value="3" />
+		<attribute key="magiclevelpoints" value="1" />
 		<attribute key="slotType" value="necklace" />
 	</item>
-	<item id="25424" name="Ferumbras' amulet">
+	<item id="25424" name="Ferumbras' amulet (unused)">
 		<attribute key="weight" value="500" />
 		<attribute key="description" value="The rare jewel is made of sapphire and ruby and has a golden F pendant." />
 		<attribute key="armor" value="3" />
