@@ -2429,8 +2429,8 @@
 		<attribute key="slotType" value="necklace" />
 		<attribute key="charges" value="5" />
 		<attribute key="showcharges" value="1" />
-		<attribute key="absorbPercentPhysical" value="80" />
-		<attribute key="absorbPercentDeath" value="80" />
+		<attribute key="absorbPercentPhysical" value="90" />
+		<attribute key="absorbPercentDeath" value="90" />
 		<attribute key="showattributes" value="1" />
 	</item>
 	<item id="2198" article="an" name="elven amulet">
@@ -2438,8 +2438,7 @@
 		<attribute key="slotType" value="necklace" />
 		<attribute key="charges" value="50" />
 		<attribute key="showcharges" value="1" />
-		<attribute key="absorbPercentPhysical" value="5" />
-		<attribute key="absorbPercentMagic" value="5" />
+		<attribute key="absorbPercentAll" value="10" />
 		<attribute key="showattributes" value="1" />
 	</item>
 	<item id="2199" article="a" name="garlic necklace">
@@ -3008,7 +3007,7 @@
 		<attribute key="weight" value="4300" />
 	</item>
 	<item id="2327" article="a" name="blessed ankh">
-		<attribute key="description" value="You see the engraving of a white raven on its surface." />
+		<attribute key="description" value="This can be used to recieve all the blessings at once." />
 		<attribute key="weight" value="420" />
 	</item>
 	<item id="2328" article="an" name="egg" editorsuffix=" (Old Phoenix egg)">
