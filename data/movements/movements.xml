@@ -1429,4 +1429,6 @@
 	<movevent event="DeEquip" itemid="5903" slot="head" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="2238" slot="feet" function="onEquipItem" /> <!-- worn leather boots -->
 	<movevent event="DeEquip" itemid="2238" slot="feet" function="onDeEquipItem" />
+	<movevent event="Equip" itemid="2123" slot="ring" function="onEquipItem" /> <!-- ring of the sky -->
+	<movevent event="DeEquip" itemid="2123" slot="ring" function="onDeEquipItem" />
 </movements>
