@@ -2091,7 +2091,7 @@ void Player::death(Creature* lastHitCreature)
 		sendReLoginWindow(unfairFightReduction);
 
 		if (getSkull() == SKULL_BLACK) {
-			health = 40;
+			health = 1;
 			mana = 0;
 		} else {
 			health = healthMax;
@@ -3963,7 +3963,7 @@ double Player::getLostPercent() const
 	int32_t deathLosePercent = g_config.getNumber(ConfigManager::DEATH_LOSE_PERCENT);
 	if (deathLosePercent != -1) {
 		if (isPromoted()) {
-			deathLosePercent -= 3;
+			deathLosePercent -= 5;
 		}
 
 		deathLosePercent -= blessings.count();
@@ -3971,7 +3971,7 @@ double Player::getLostPercent() const
 	}
 
 	double lossPercent;
-	if (level >= 25) {
+	if (level >= 20) {
 		double tmpLevel = level + (levelPercent / 100.);
 		lossPercent = static_cast<double>((tmpLevel + 50) * 50 * ((tmpLevel * tmpLevel) - (5 * tmpLevel) + 8)) / experience;
 	} else {
@@ -3979,10 +3979,13 @@ double Player::getLostPercent() const
 	}
 
 	double percentReduction = 0;
-	if (isPromoted()) {
-		percentReduction += 30;
+	if (isPremium()) {
+		percentReduction += 5;
 	}
-	percentReduction += blessings.count() * 8;
+	if (isPromoted()) {
+		percentReduction += 5;
+	}
+	percentReduction += blessings.count() * 10;
 	return lossPercent * (1 - (percentReduction / 100.)) / 100.;
 }
 
