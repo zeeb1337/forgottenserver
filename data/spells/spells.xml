@@ -145,7 +145,11 @@
 		<vocation name="Druid" />
 		<vocation name="Elder Druid" />
 	</instant>
-	<instant group="attack" spellid="119" name="Ultimate Discharge" words="exevo gran mas vis" level="55" mana="800" selftarget="1" premium="1" cooldown="2000" groupcooldown="2000" needlearn="0" script="attack/ultimate_discharge.lua">
+	<instant group="attack" spellid="119" name="Chaotic Discharge" words="exevo gran mas vis" level="55" mana="800" selftarget="1" premium="1" cooldown="2000" groupcooldown="2000" needlearn="0" script="attack/chaotic_discharge.lua">
+		<vocation name="Sorcerer" />
+		<vocation name="Master Sorcerer" />
+	</instant>
+	<instant group="attack" spellid="119" name="Ultimate Sacrifice" words="exevo gran mas ulti" level="100" mana="1" selftarget="1" premium="1" cooldown="2000" groupcooldown="2000" needlearn="0" script="attack/ultimate_sacrifice.lua">
 		<vocation name="Sorcerer" />
 		<vocation name="Master Sorcerer" />
 	</instant>
@@ -206,6 +210,10 @@
 		<vocation name="Royal Paladin" />
 	</instant>
 	<instant group="healing" spellid="84" name="Heal Friend" words="exura sio" level="18" mana="140" premium="1" aggressive="0" blockwalls="1" needtarget="1" playernameparam="1" params="1" cooldown="1000" groupcooldown="1000" needlearn="0" script="healing/heal_friend.lua">
+		<vocation name="Druid" />
+		<vocation name="Elder Druid" />
+	</instant>
+	<instant group="healing" spellid="84" name="Transfer Life" words="exura ulti" level="100" mana="1" premium="1" aggressive="0" blockwalls="1" needtarget="1" playernameparam="1" params="1" cooldown="1000" groupcooldown="1000" needlearn="0" script="healing/transfer_life.lua">
 		<vocation name="Druid" />
 		<vocation name="Elder Druid" />
 	</instant>
