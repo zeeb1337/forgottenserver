@@ -1603,7 +1603,7 @@ void ProtocolGame::sendSaleItemList(const std::list<ShopInfo>& shop)
 	if (shop.size() <= 5) {
 		// For very small shops it's not worth it to create the complete map
 		for (const ShopInfo& shopInfo : shop) {
-			if (shopInfo.sellPrice == 0) {
+			if (shopInfo.sellPrice < 0) {
 				continue;
 			}
 
@@ -1630,7 +1630,7 @@ void ProtocolGame::sendSaleItemList(const std::list<ShopInfo>& shop)
 		// (That is, fluids such as potions etc., actually these items are very few since
 		// health potions now use their own ID)
 		for (const ShopInfo& shopInfo : shop) {
-			if (shopInfo.sellPrice == 0) {
+			if (shopInfo.sellPrice < 0) {
 				continue;
 			}
 
