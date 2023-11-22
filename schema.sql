@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS `players` (
   `lookfeet` int NOT NULL DEFAULT '0',
   `lookhead` int NOT NULL DEFAULT '0',
   `looklegs` int NOT NULL DEFAULT '0',
-  `looktype` int NOT NULL DEFAULT '136',
+  `looktype` int NOT NULL DEFAULT '33',
   `lookaddons` int NOT NULL DEFAULT '0',
   `direction` tinyint unsigned NOT NULL DEFAULT '2',
   `maglevel` int NOT NULL DEFAULT '0',
@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `players` (
   `posz` int NOT NULL DEFAULT '0',
   `conditions` blob DEFAULT NULL,
   `cap` int NOT NULL DEFAULT '400',
-  `sex` int NOT NULL DEFAULT '0',
+  `sex` int NOT NULL DEFAULT '1',
   `lastlogin` bigint unsigned NOT NULL DEFAULT '0',
   `lastip` int unsigned NOT NULL DEFAULT '0',
   `save` tinyint NOT NULL DEFAULT '1',
@@ -376,3 +376,12 @@ CREATE TRIGGER `oncreate_guilds` AFTER INSERT ON `guilds`
 END
 //
 DELIMITER ;
+
+-- Add GOD account (111111/tibia) & vocation account (1/1)
+INSERT INTO `accounts` (`id`, `name`, `password`, `type`) VALUES ('1', '111111', '41da8bef22aaef9d7c5821fa0f0de7cccc4dda4d', '6');
+INSERT INTO `accounts` (`id`, `name`, `password`) VALUES ('2', '1', '356a192b7913b04c54574d18c28d46e6395428ab');
+
+INSERT INTO `players` (`id`, `name`, `group_id`, `account_id`) VALUES ('1', '[GOD] Tester', '6', '1'); -- GOD
+INSERT INTO `players` (`id`, `name`, `account_id`, `vocation`, `maglevel`, `save`, `skill_shielding`) VALUES ('2', 'Sorcerer', '2', '1', '60', '0', '40'), ('3', 'Druid', '2', '2', '60', '0', '40');
+INSERT INTO `players` (`id`, `name`, `account_id`, `vocation`, `maglevel`, `save`, `skill_dist`, `skill_shielding`) VALUES ('4', 'Paladin', '2', '3', '20', '0', '100', '60');
+INSERT INTO `players` (`id`, `name`, `account_id`, `vocation`, `maglevel`, `save`, `skill_club`, `skill_sword`, `skill_axe`, `skill_shielding`) VALUES ('5', 'Knight', '2', '4', '10', '0', '80', '80', '80', '80');

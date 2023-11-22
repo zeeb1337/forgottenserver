@@ -2000,6 +2000,9 @@ void LuaScriptInterface::registerFunctions()
 	registerEnumIn("configKeys", ConfigManager::MAX_PACKETS_PER_SECOND)
 	registerEnumIn("configKeys", ConfigManager::PLAYER_CONSOLE_LOGS)
 
+	registerEnumIn("configKeys", ConfigManager::WAR_MODE)
+	registerEnumIn("configKeys", ConfigManager::MIN_WAR_LEVEL)
+
 	// os
 	registerMethod("os", "mtime", LuaScriptInterface::luaSystemTime);
 

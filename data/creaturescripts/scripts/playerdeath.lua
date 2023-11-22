@@ -1,5 +1,7 @@
 local deathListEnabled = true
 local maxDeathRecords = 5
+local rewardItem = 2152 -- platinum coin
+local rewardCount = 1
 
 function onDeath(player, corpse, killer, mostDamageKiller, lastHitUnjustified, mostDamageUnjustified)
 	local playerId = player:getId()
@@ -42,6 +44,17 @@ function onDeath(player, corpse, killer, mostDamageKiller, lastHitUnjustified, m
 			end
 		end
 		mostDamageName = mostDamageKiller:getName()
+		
+		if configManager.getBoolean(configKeys.WAR_MODE) then
+			if mostDamageKiller:getIp() ~= player:getIp() then -- Add reward to killer
+				mostDamageKiller:addItem(rewardItem, rewardCount)
+				mostDamageKiller:getPosition():sendMagicEffect(CONST_ME_GIFT_WRAPS)
+				mostDamageKiller:sendTextMessage(MESSAGE_INFO_DESCR, "You have been awarded " .. rewardCount .."x " .. ItemType(rewardItem):getName() .."(s) for killing " .. player:getName() .. ".")
+			else -- Punish abusers
+				mostDamageKiller:addHealth(-mostDamageKiller:getHealth())
+				mostDamageKiller:sendTextMessage(MESSAGE_STATUS_WARNING, "You have been punished for cheating.")
+			end
+		end
 	else
 		mostDamageName = "field item"
 	end

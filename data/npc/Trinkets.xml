@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Trinkets" script="default.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100" />
+	<look type="138" head="57" body="59" legs="40" feet="76" addons="0" />
+	<parameters>
+		<parameter key="module_shop" value="1" />
+		<parameter key="shop_buyable" value="
+			stone skin amulet,2197,1000;
+			elven amulet,2198,0;
+			dragon necklace,2201,0;
+			strange talisman,2161,0;
+			scarf,2661,0;
+			silver amulet,2170,0;
+			
+			might ring,2164,1000;
+			energy ring,2167,0;
+			time ring,2169,0;
+			sword ring,2207,0;
+			axe ring,2208,0;
+			club ring,2209,0"
+		/>
+	</parameters>
+</npc>

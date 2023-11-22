@@ -24,6 +24,19 @@ function onLogin(player)
 	elseif not promotion then
 		player:setVocation(vocation:getDemotion())
 	end
+	
+	-- Auto level on login
+	local level = configManager.getNumber(configKeys.MIN_WAR_LEVEL)
+	if configManager.getBoolean(configKeys.WAR_MODE) then
+		if player:getLevel() < level and not player:getGroup():getAccess() then
+			player:addExperience(math.floor((Game.getExperienceForLevel(level) - player:getExperience()) + 0.5))
+		end
+		
+		if vocation == 1 or vocation == 2 or vocation == 5 or vocation == 6 then -- Mage
+			player:addSkill(SKILL_MAGLEVEL, 60)
+			player:addSkill(SKILL_CLUB, 30)
+		end
+	end
 
 	-- Events
 	player:registerEvent("PlayerDeath")

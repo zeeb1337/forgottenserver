@@ -2240,8 +2240,7 @@
 		<attribute key="slotType" value="ring" />
 		<attribute key="charges" value="20" />
 		<attribute key="showcharges" value="1" />
-		<attribute key="absorbPercentPhysical" value="20" />
-		<attribute key="absorbPercentMagic" value="20" />
+		<attribute key="absorbPercentAll" value="20" />
 		<attribute key="showattributes" value="1" />
 	</item>
 	<item id="2165" article="a" name="stealth ring">
@@ -2436,8 +2435,7 @@
 		<attribute key="slotType" value="necklace" />
 		<attribute key="charges" value="50" />
 		<attribute key="showcharges" value="1" />
-		<attribute key="absorbPercentPhysical" value="5" />
-		<attribute key="absorbPercentMagic" value="5" />
+		<attribute key="absorbPercentAll" value="5" />
 		<attribute key="showattributes" value="1" />
 	</item>
 	<item id="2199" article="a" name="garlic necklace">
@@ -2461,7 +2459,7 @@
 		<attribute key="slotType" value="necklace" />
 		<attribute key="charges" value="200" />
 		<attribute key="showcharges" value="1" />
-		<attribute key="absorbPercentFire" value="8" />
+		<attribute key="absorbPercentFire" value="10" />
 		<attribute key="showattributes" value="1" />
 	</item>
 	<item id="2202" article="a" name="stealth ring (invisibility)">
@@ -2782,7 +2780,7 @@
 		<attribute key="weight" value="70" />
 		<attribute key="charges" value="3" />
 	</item>
-	<item id="2278" article="a" name="paralyse rune">
+	<item id="2278" article="a" name="paralyze rune">
 		<attribute key="type" value="rune" />
 		<attribute key="runeSpellName" value="adana ani" />
 		<attribute key="weight" value="210" />
@@ -4578,8 +4576,11 @@
 	</item>
 	<item id="2661" article="a" name="scarf">
 		<attribute key="weight" value="200" />
-		<attribute key="armor" value="1" />
 		<attribute key="slotType" value="necklace" />
+		<attribute key="charges" value="200" />
+		<attribute key="showcharges" value="1" />
+		<attribute key="absorbPercentIce" value="10" />
+		<attribute key="showattributes" value="1" />
 	</item>
 	<item id="2662" article="a" name="magician hat">
 		<attribute key="weight" value="750" />

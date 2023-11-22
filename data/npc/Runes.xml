@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Runes" script="default.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100" />
+	<look type="138" head="57" body="59" legs="40" feet="76" addons="0" />
+	<parameters>
+		<parameter key="module_shop" value="1" />
+		<parameter key="shop_buyable" value="
+			sudden death rune,2268,0;
+			explosion rune,2313,0;
+			great fireball rune,2304,0;
+			avalanche rune,2274,0;
+			thunderstorm rune,2315,0;
+			stone shower rune,2288,0;
+			
+			paralyze rune,2278,100;
+			soulfire rune,2308,0;
+			magic wall rune,2293,0;
+			wild growth rune,2269,0;
+			fire bomb rune,2305,0;
+			energy bomb rune,2262,0;
+			destroy field rune,2261,0;
+			disintegrate rune,2310,0;
+			blank rune,2260,0"
+		/>
+	</parameters>
+</npc>

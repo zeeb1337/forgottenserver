@@ -1423,4 +1423,8 @@
 	<movevent event="DeEquip" itemid="25411" slot="shield" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="25414" slot="shield" level="200" function="onEquipItem" />
 	<movevent event="DeEquip" itemid="25414" slot="shield" function="onDeEquipItem" />
+	
+	<!-- Custom -->
+	<movevent event="Equip" itemid="2661" slot="necklace" function="onEquipItem" /> <!-- scarf -->
+	<movevent event="DeEquip" itemid="2661" slot="necklace" function="onDeEquipItem" />
 </movements>
