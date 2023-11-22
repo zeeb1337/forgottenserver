@@ -3219,8 +3219,8 @@ void ProtocolGame::AddShopItem(NetworkMessage& msg, const ShopInfo& item)
 
 	msg.addString(item.realName);
 	msg.add<uint32_t>(it.weight);
-	msg.add<uint32_t>(item.buyPrice);
-	msg.add<uint32_t>(item.sellPrice);
+	msg.add<int32_t>(item.buyPrice);
+	msg.add<int32_t>(item.sellPrice);
 }
 
 void ProtocolGame::parseExtendedOpcode(NetworkMessage& msg)
