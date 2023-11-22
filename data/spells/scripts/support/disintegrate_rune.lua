@@ -5,15 +5,20 @@ function onCastSpell(creature, variant, isHotkey)
 	local position = variant:getPosition()
 	local tile = Tile(position)
 	if tile then
-		local items = tile:getItems()
-		if items then
-			for i, item in ipairs(items) do
-				if item:getType():isMovable() and item:getUniqueId() > 65535 and item:getActionId() == 0 and not table.contains(corpseIds, item:getId()) then
-					item:remove()
-				end
+		if tile:hasFlag(TILESTATE_PROTECTIONZONE) then
+			player:sendCancelMessage(RETURNVALUE_ACTIONNOTPERMITTEDINPROTECTIONZONE)
+			return true
+		else
+			local items = tile:getItems()
+			if items then
+				for i, item in ipairs(items) do
+					if item:getType():isMovable() and item:getUniqueId() > 65535 and item:getActionId() == 0 and not table.contains(corpseIds, item:getId()) then
+						item:remove()
+					end
 
-				if i == removalLimit then
-					break
+					if i == removalLimit then
+						break
+					end
 				end
 			end
 		end
