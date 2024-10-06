@@ -29,6 +29,7 @@
 		attackspeed="2000"
 		basespeed="220"
 		soulmax="100" gainsoulticks="120"
+		allowPvp="1"
 		fromvoc="1"
 		noPongKickTime="40">
 		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
@@ -49,6 +50,7 @@
 		attackspeed="2000"
 		basespeed="220"
 		soulmax="100" gainsoulticks="120"
+		allowPvp="1"
 		fromvoc="2"
 		noPongKickTime="40">
 		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
@@ -69,6 +71,7 @@
 		attackspeed="2000"
 		basespeed="220"
 		soulmax="100" gainsoulticks="120"
+		allowPvp="1"
 		fromvoc="3"
 		noPongKickTime="40">
 		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
@@ -89,6 +92,7 @@
 		attackspeed="2000"
 		basespeed="220"
 		soulmax="100" gainsoulticks="120"
+		allowPvp="1"
 		fromvoc="4"
 		noPongKickTime="40">
 		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
@@ -109,6 +113,7 @@
 		attackspeed="2000"
 		basespeed="220"
 		soulmax="200" gainsoulticks="15"
+		allowPvp="1"
 		fromvoc="1"
 		noPongKickTime="40">
 		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
@@ -129,6 +134,7 @@
 		attackspeed="2000"
 		basespeed="220"
 		soulmax="200" gainsoulticks="15"
+		allowPvp="1"
 		fromvoc="2"
 		noPongKickTime="40">
 		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
@@ -148,8 +154,8 @@
 		manamultiplier="1.4"
 		attackspeed="2000"
 		basespeed="220"
-		soulmax="200"
-		gainsoulticks="15"
+		soulmax="200" gainsoulticks="15"
+		allowPvp="1"
 		fromvoc="3"
 		noPongKickTime="40">
 		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
@@ -170,6 +176,7 @@
 		attackspeed="2000"
 		basespeed="220"
 		soulmax="200" gainsoulticks="15"
+		allowPvp="1"
 		fromvoc="4"
 		noPongKickTime="40">
 		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
